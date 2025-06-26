@@ -1,0 +1,671 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #1a1a2e !important;
+    color: #ffffff;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* overflow-y: auto; */
+}
+/* .empty-card */
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    
+  font-family: "Outfit", sans-serif;
+    max-width: 1400px;
+    height: 99%;
+    background-color: #16162a; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    overflow-y: auto;
+
+}
+
+.sidebar {
+    width: 60px;
+    background-color: #1c1c36; 
+    /* padding: 20px 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #28284e;
+    position: absolute;
+    height: 100%;
+}
+
+.logo img {
+    width: 60px;
+    margin-bottom: 30px;
+    
+} 
+
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.nav-item {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9292b3;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 12px;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+    background-color: #2e2e5e;
+}
+
+.nav-item.active {
+    color: #ffffff;
+    background-color: #2e2e5e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4d4f;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1c1c36;
+}
+
+.sidebar-footer .nav-item {
+    margin-top: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 60px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #2e2e5e;
+    padding-bottom: 15px;
+}
+
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.add-button, .menu-button {
+    background-color: #2e2e5e;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover, .menu-button:hover {
+    background-color: #43438a;
+}
+
+
+
+.tabs {
+    display: flex;
+    gap: 30px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: #9292b3;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.tab-button:hover {
+    color: #ffffff;
+}
+
+.tab-button.active {
+    color: #ffffff;
+}
+
+.main-header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0;
+    color: #1c1e21;
+}
+
+/* Boards Container */
+.boards-container {
+    display: flex;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.board {
+    flex: 1; /* Each board takes equal space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.board h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #65676b;
+    margin: 0;
+}
+
+/* Order Card */
+.order-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    min-height: 120px; /* Minimum height for cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-card {
+    background-color: #4a4a65b3; /* Lighter background for empty cards */
+    border: 1px dashed #c0c0c0;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.customer-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #1c1e21;
+}
+
+.order-number {
+    font-weight: bold;
+    font-size: 1em;
+    color: #65676b;
+}
+
+.order-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Pushes the footer to the bottom */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Custom markers for list items */
+.item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 2px; /* Small square as marker */
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.item.red::before {
+    background-color: #e74c3c; /* Red color */
+}
+
+.item.orange::before {
+    background-color: #e67e22; /* Orange color */
+}
+
+.item.green::before {
+    background-color: #2ecc71; /* Green color */
+}
+
+.quantity {
+    font-weight: bold;
+    margin-right: 5px;
+    min-width: 20px; /* Fixed width for quantity alignment */
+}
+
+.order-footer {
+    text-align: right;
+    margin-top: auto; /* Pushes the time to the bottom of the card */
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Specific style for the "Prêts" card */
+.ready-card {
+    background-color: #d4edda; /* Light green background */
+    border-color: #c3e6cb;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4d4f;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1c1c36;
+}
+
+.sidebar-footer .nav-item {
+    margin-top: auto;
+}
+
+
+
+@media (max-width: 1200px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .menu-button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .tab-button {
+        background: none;
+    border: none;
+    color: #9292b3;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+    }
+    .tabs {
+    display: flex;
+    gap: 25px;
+    }
+
+}
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    .sidebar {
+        width: 50px;
+    }
+
+    .sidebar-nav {
+        gap: 15px;
+    }
+
+    .nav-item {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+        margin-left: 50px;
+    }
+
+    
+    .tabs {
+        gap: 15px;
+    }
+    
+    .header-actions {
+        gap: 10px;
+    }
+    /* .add-button, .menu-button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    } */
+    /* .card {
+        padding: 20px;
+    }
+    .card-header {
+        top: 15px;
+        right: 15px;
+    }
+    .user-avatar-1, .user-avatar-2, .user-avatar-3, .user-avatar-4 {
+        width: 80px;
+        height: 80px;
+    }
+    .user-name {
+        font-size: 18px;
+    }
+    .icon-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-circle img {
+        width: 100%;
+        height: 100%;
+    } */
+
+    
+    .order-item {
+        font-size: 14px;
+    }
+    .order-details {
+        gap: 5px;
+    }
+    .color-square {
+        width: 12px;
+        height: 12px;
+    }
+    .time {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+    .notification-badge {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    /* .card-menu-icon {
+        font-size: 16px;
+    } */
+
+   .tab-button {
+        background: none;
+    border: none;
+    color: #9292b3;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+    }
+    .dashboard-container{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .board h2 {
+        font-size: 12px;
+        /* font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 10px; */
+    }
+
+    .order-header{
+        font-size: 12px;
+    }
+
+    .order-items 
+    {
+        font-size: 12px ;
+    }
+
+
+    /* .tab-button .badge, .tab-button .badge-cmd, .tab-button .badge-trm {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    } */
+     /*adjust width of the logo in the sidebar*/
+    .logo img {
+        width: 50px;
+        margin-bottom: 20px;
+    }
+
+    .menu-button {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+
+    .tabs {
+    display: flex;
+    gap: 10px;
+    }
+
+    .sidebar {
+        width: 40px;
+    }
+
+    .sidebar-nav {
+        gap: 20px;
+    }
+
+
+    .nav-item {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .order-items
+    {
+        font-size: 9px ;
+    }
+
+    .dashboard-container{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .main-content {
+        padding: 15px;
+        margin-left: 40px;
+    }
+
+    /* .main-header {
+        padding-bottom: 5px;
+    } */
+
+    /* .tabs {
+        gap: 10px;
+    } */
+
+    /* .header-actions {
+        gap: 5px;
+    } */
+
+    /* .add-button, .menu-button {
+        width: 10px;
+        height: 10px;
+        font-size: 9px;
+    } */
+/* 
+    .card {
+        padding: 15px; */
+        /* border: 1px solid #eee;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: #fff; */
+        /* width: ; */
+    /* } */
+
+    /* .card-header {
+        top: 10px;
+        right: 10px;
+    } */
+/* 
+    .user-avatar-1, .user-avatar-2, .user-avatar-3, .user-avatar-4 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .user-name {
+        font-size: 16px;
+    }
+
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-circle img {
+        width: 100%;
+        height: 100%;
+    } */
+
+    .order-item {
+        font-size: 12px;
+    }
+
+    .order-details {
+        gap: 3px;
+    }
+
+    .color-square {
+        width: 10px;
+        height: 10px;
+    }
+
+    .time {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+
+    .order-items .order-header
+    {
+        font-size: 7px ;
+    }
+
+    .notification-badge {
+        width: 18px;
+        height: 18px;
+        font-size: 8px;
+    }
+
+    /* .card-menu-icon {
+        font-size: 14px;
+    } */
+
+    .tab-button.ready {
+        font-size: 9px;
+    }
+
+    .tab-button {
+        background: none;
+    border: none;
+    color: #9292b3;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+    }
+
+    
+
+    .tab-button .badge, .tab-button .badge-cmd, .tab-button .badge-trm {
+        width: 8px;
+        height: 8px;
+        font-size: 8px;
+    }
+
+    .logo img {
+        width: 40px;
+        margin-bottom: 20px;
+    }
+
+     .menu-button {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        margin-left: auto;
+    }
+
+}
+
+/* Add any additional styles here */
+@media (max-width: 360px) {
+    .cards-container {
+        grid-template-columns: repeat(1, minmax(20px, 1fr));
+        width: 90%;
+    }
+    .tab-button .badge, .tab-button .badge-cmd, .tab-button .badge-trm {
+        width: 6px;
+        height: 6px;
+        font-size: 6px;
+    }
+
+    /* .logo img {
+        width: 30px;
+        margin-bottom: 20px;
+    } */
+}
+
+/* .main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 200px;
+
+    background-color: #16162a; 
+    border-top: 1px solid #28284e;
+} */

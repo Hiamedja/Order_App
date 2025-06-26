@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./img/Logoo.jpeg" alt="Logo"> </div>
+            <nav class="sidebar-nav">
+                <div class="nav-item active">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">13</span>
+                </div>
+                <div class="nav-item"><i class="fas fa-th-large"></i></div>
+                <div class="nav-item"><i class="fas fa-chart-bar"></i></div>
+                <div class="nav-item"><i class="fas fa-utensils"></i></div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="nav-item"><i class="fas fa-cog"></i></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="tabs">
+                    <button class="tab-button active"><i class="fas fa-receipt"></i> Commandes reçues <span class="badge-cmd">1</span></button>
+                    <button class="tab-button ready"><i class="fas fa-box"></i> Prêtes à récupérer <span class="badge">1</span></button>
+                    <button class="tab-button last"><i class="fas fa-check-circle"></i> Terminées <span class="badge-trm">0</span></button>
+                </div>
+                <div class="header-actions">
+                    <button class="menu-button"><i class="fas fa-grip"></i></button>
+                    <button class="menu-button"><i class="fas fa-search"></i></button>
+                    <button class="menu-button"><i class="fas fa-bell"></i></button>
+                    <button class="menu-button"><i class="fas fa-bars"></i></button>
+                </div>
+            </header>
+
+            <section class="cards-container">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="time">6 min</span>
+                        <div class="card-menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="user-info">
+                        <img src="./img/mehdi.jpg" alt="mehdi" class="user-avatar-1">
+                        <div class="user-name">MEHDI</div>
+                    </div>
+                    <div class="icon-circle yinyang-circle">
+                        <img src="./img/deep-.png" alt="deep">
+                    </div>
+                    <hr>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <span class="color-square blue-square"></span>
+                            <span>Whisky Coca-Cola</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="time">5 min</span>
+                        <div class="card-menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="user-info">
+                        <img src="./img/benjamin.jpg" alt="benjamin" class="user-avatar-2">
+                        <div class="user-name">BENJAMIN</div>
+                    </div>
+                    <div class="icon-circle peacock-circle">
+                        <img src="./img/peacock-.png" alt="Peacock">
+                    </div>
+                    <hr>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <span class="color-square blue-square"></span>
+                            <span>Vodka Orange</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="color-square green-square"></span>
+                            <span>Bouteille d'eau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="time">5 min</span>
+                        <div class="card-menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="user-info">
+                        <img src="./img/claude.jpg" alt="claude" class="user-avatar-3">
+                        <div class="user-name">CLAUDE</div>
+                    </div>
+                    <div class="icon-circle pineapple-circle">
+                        <img src="./img/pineapple-.png" alt="Pineapple">
+                    </div>
+                    <hr>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <span class="color-square orange-square"></span>
+                            <span>Whisky Coca-Cola</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="time">4 min</span>
+                        <div class="card-menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="user-info">
+                        <img src="./img/sarah.jpg" alt="sarah" class="user-avatar-4">
+                        <div class="user-name">SARAH</div>
+                    </div>
+                    <div class="icon-circle eye-circle">
+                        <img src="./img/eye.png" alt="Eye">
+                    </div>
+                    <hr>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <span class="color-square yellow-square"></span>
+                            <span>Heineken 25 cl</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="time">1 min</span>
+                        <div class="card-menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="user-info">
+                        <img src="./img/ahmed.jpg" alt="ahmed" class="user-avatar-2">
+                        <div class="user-name">AHMED</div>
+                    </div>
+                    <div class="icon-circle peacock-circle">
+                        <img src="./img/nature.png" alt="Peacock">
+                    </div>
+                    <hr>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <span class="color-square blue-square"></span>
+                            <span>CocaCola</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="color-square green-square"></span>
+                            <span>Bouteille d'eau</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
