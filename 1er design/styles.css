@@ -9,7 +9,6 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    /* overflow-y: auto; */
 }
 
 .dashboard-container {
@@ -20,7 +19,6 @@ body {
     background-color: #16162a; 
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    /* overflow: hidden; */
     overflow-y: auto;
 
 }
@@ -28,7 +26,7 @@ body {
 .sidebar {
     width: 60px;
     background-color: #1c1c36; 
-    /* padding: 20px 0; */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,16 +149,11 @@ body {
 
 .tab-button.ready {
     color: #79d70f;
-    /* display: flex; */
     align-items: center;
-    /* gap: 8px; */
 }
 
 .tab-button.last {
-    /* color: #b13f2e; */
-    /* display: flex; */
     align-items: center;
-    /* gap: 8px; */
 }
 
 .tab-button .badge {
@@ -229,7 +222,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    /* padding-top: 10px; */
 }
 
 .card {
@@ -340,7 +332,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 30px; */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -399,7 +390,6 @@ hr {
     flex-shrink: 0;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -458,11 +448,7 @@ hr {
     .header-actions {
         gap: 10px;
     }
-    /* .add-button, .menu-button {
-        width: 30px;
-        height: 30px;
-        font-size: 18px;
-    } */
+    
     .card {
         padding: 20px;
     }
@@ -528,12 +514,6 @@ hr {
     }
 
 
-    /* .tab-button .badge, .tab-button .badge-cmd, .tab-button .badge-trm {
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-    } */
-     /*adjust width of the logo in the sidebar*/
     .logo img {
         width: 50px;
         margin-bottom: 20px;
@@ -582,37 +562,12 @@ hr {
         margin-left: 40px;
     }
 
-    /* .main-header {
-        padding-bottom: 5px;
-    } */
-
-    /* .tabs {
-        gap: 10px;
-    } */
-
-    /* .header-actions {
-        gap: 5px;
-    } */
-
-    /* .add-button, .menu-button {
-        width: 10px;
-        height: 10px;
-        font-size: 9px;
-    } */
 
     .card {
-        padding: 15px;
-        /* border: 1px solid #eee;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        background: #fff; */
-        /* width: ; */
+        padding: 15px; 
     }
 
-    /* .card-header {
-        top: 10px;
-        right: 10px;
-    } */
+
 
     .user-avatar-1, .user-avatar-2, .user-avatar-3, .user-avatar-4 {
         width: 70px;
@@ -699,7 +654,6 @@ hr {
 
 }
 
-/* Add any additional styles here */
 @media (max-width: 360px) {
     .cards-container {
         grid-template-columns: repeat(1, minmax(20px, 1fr));
@@ -711,9 +665,5 @@ hr {
         font-size: 6px;
     }
 
-    /* .logo img {
-        width: 30px;
-        margin-bottom: 20px;
-    } */
 }
 
