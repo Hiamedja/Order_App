@@ -42,7 +42,7 @@ Chaque carte affiche :
 
 ## ▶️ Comment tester le projet
 
-### ✅ Option 1 – Localement (rapide et simple)
+### ✅ Localement (rapide et simple)
 
 1. Cloner ce repository :
 
