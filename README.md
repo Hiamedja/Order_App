@@ -59,18 +59,6 @@ Dans chaque dossier, **double-cliquer sur `index.html`** pour l’ouvrir dans vo
 
 ---
 
-### 🌐 Option 2 – En ligne
-
-Tu peux aussi déployer ce projet gratuitement sur une plateforme comme :
-
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-
-Cela permet de **partager un lien public** directement avec des recruteurs ou collègues.
-
----
-
 ### 📱 Responsive Design
 
 Les interfaces sont **100% responsive** : elles s’adaptent automatiquement aux différentes tailles d’écran (**mobile**, **tablette**, **desktop**).  
@@ -112,15 +100,4 @@ Il me permet de mettre en valeur :
 
 ![2eme design](https://github.com/user-attachments/assets/8fff145d-a8cd-404a-99bf-3036d665f749)
 
----
-
-### 🤝 Intéressé(e) par ce que je fais ?
-
-Je suis toujours ouverte à :
-
-- 💡 Des collaborations  
-- 🧠 Des retours constructifs  
-- 🤝 De nouvelles opportunités de stage ou de travail
-
-📩 **N’hésitez pas à me contacter si vous souhaitez échanger ou travailler ensemble !**
 
