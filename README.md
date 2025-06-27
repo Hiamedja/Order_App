@@ -1,7 +1,7 @@
 # 🛍️ Click & Collect - Interfaces de commandes (HTML / CSS / Bootstrap)
 
 Bienvenue ! 👋  
-Ce projet est une démonstration de deux interfaces d’une application **Click & Collect**. Le concept est simple : les clients passent commande en ligne, puis viennent la **récupérer sur place** (pas de livraison).
+Ce projet est une démonstration de deux interfaces d’une application **Click & Collect**. Le concept est simple : les clients passent commande en ligne, puis viennent la **récupérer sur place** .
 
 Les deux pages présentées ici sont conçues en **HTML, CSS et Bootstrap**, avec un design **responsive**, clair et fonctionnel.
 
