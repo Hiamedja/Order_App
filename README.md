@@ -83,7 +83,7 @@ Ce projet a été réalisé dans le cadre d’un **exercice technique** pour un 
 
 Il me permet de mettre en valeur :
 
-- Ma capacité à transformer une maquette en code propre
+- Ma capacité à transformer une maquette Figma en code propre
 - Ma maîtrise du responsive design
 - Mon attention au détail et à l’expérience utilisateur
 
