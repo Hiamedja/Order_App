@@ -13,18 +13,6 @@ Le projet est divisé en **deux dossiers** :
 
 ### 🔹 `1er design/` – Gestion des commandes
 
-Cette page permet au personnel de visualiser les commandes en deux catégories :
-- **À préparer** : commandes que l’équipe doit encore préparer.
-- **Prêtes** : commandes prêtes à être récupérées par les clients.
-
-Chaque carte affiche :
-- Le nom du client
-- La liste des produits commandés avec code couleur
-- Le numéro de commande
-- Le temps écoulé depuis la commande
-
-### 🔹 `2eme design/` – Vue cartes clients
-
 Cette page montre les commandes reçues **sous forme de cartes** avec :
 - La photo du client
 - Son prénom
@@ -36,6 +24,19 @@ Avec une navigation par onglets :
 - `Commandes reçues`
 - `Prêtes à récupérer`
 - `Terminées`
+
+### 🔹 `2eme design/` – Vue cartes clients
+
+Cette page permet au personnel de visualiser les commandes en deux catégories :
+- **À préparer** : commandes que l’équipe doit encore préparer.
+- **Prêtes** : commandes prêtes à être récupérées par les clients.
+
+Chaque carte affiche :
+- Le nom du client
+- La liste des produits commandés avec code couleur
+- Le numéro de commande
+- Le temps écoulé depuis la commande
+
 
 ---
 
