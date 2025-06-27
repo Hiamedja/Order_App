@@ -44,7 +44,8 @@ Avec une navigation par onglets :
 ### ✅ Option 1 – Localement (rapide et simple)
 
 1. Cloner ce repository :
-   https://github.com/Hiamedja/Order_App.git
+
+   git clone https://github.com/Hiamedja/Order_App.git
    
 ### 📂 Ouvrir les dossiers localement
 
